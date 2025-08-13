@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
-  <title>Shamir + AES </title>
+  <title>ShAES </title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -67,7 +67,7 @@
 </head>
 
 <body>
-<h1>Shamir+AES-256</h1>
+<h1>ShAES-256</h1>
 
 <!-- 若离线使用，请把下面两个 CDN 换成本地文件 -->
 
@@ -89,7 +89,7 @@
   <p>请输入加密密码（此密码绝对不能忘记，否则无法恢复！）：</p>
   <input type="text" id="encryptPass" placeholder="加密密码 (建议复杂一些)"/>
 
-  <p>设置 Shamir 碎片分割参数：</p>
+  <p>设置碎片分割参数：</p>
   <label>总碎片数 (n)：</label>
   <input type="number" id="totalShares" min="2" value="5"/>
   <label>阈值 (k：即至少要多少碎片恢复)：</label>
@@ -101,8 +101,8 @@
 
 <div class="container">
   <h2>2. 恢复文本（合并 + 解密）</h2>
-  <p>在下方粘贴至少 <strong>k</strong> 份碎片（每行一个），示例：<br/>
-     <code>S1-xxxxxxxx<br/>S2-yyyyyyyy...</code>
+  <p>在下方粘贴至少 <strong>k</strong> 份碎片（每行一个）<br/>
+     
   </p>
   <textarea id="sharesInput" placeholder="在此粘贴碎片..."></textarea>
 
